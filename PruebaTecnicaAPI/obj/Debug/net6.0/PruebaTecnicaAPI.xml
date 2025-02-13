@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PruebaTecnicaAPI</name>
+    </assembly>
+    <members>
+        <member name="M:PruebaTecnicaAPI.Controllers.BooksController.GetBooks">
+            <remarks>
+            Busca todos los libros sin parametro
+            </remarks>
+            <summary>
+            Realizar busqueda de todos los libros
+            </summary>
+            <response code="200">Retorna la información correctamente.</response>
+            <response code="400">Responde si la consulta no se encuentra.</response>
+        </member>
+        <member name="M:PruebaTecnicaAPI.Controllers.BooksController.GetBooksById(System.Int32)">
+            <remarks>
+            Busca libros por parametro
+            </remarks>
+            <summary>
+            Realizar busqueda de libro por ID
+            </summary>
+            <param name="id">Id del libro a buscar.</param>
+            <response code="200">Retorna la información correctamente.</response>
+            <response code="400">Responde si la consulta no se encuentra.</response>
+        </member>
+        <member name="M:PruebaTecnicaAPI.Controllers.BooksController.SendBooks(PruebaTecnicaAPI.Models.SendBooks)">
+            <remarks>
+            Registra el libro
+            </remarks>
+            <summary>
+            Realizar el registro del libro
+            </summary>
+            <param name="books">Libro a crear.</param>
+            <response code="200">Retorna la información correctamente.</response>
+            <response code="400">Responde si la consulta no se encuentra.</response>
+        </member>
+        <member name="M:PruebaTecnicaAPI.Controllers.BooksController.DeleteBooks(System.Int32)">
+            <remarks>
+            Elimina el libro
+            </remarks>
+            <summary>
+            Realizar la eliminación del libro
+            </summary>
+            <param name="id">Libro a eliminar.</param>
+            <response code="200">Retorna la información correctamente.</response>
+            <response code="400">Responde si la consulta no se encuentra.</response>
+        </member>
+        <member name="M:PruebaTecnicaAPI.Controllers.BooksController.UpdateBooks(System.Int32,PruebaTecnicaAPI.Models.SendBooks)">
+            <remarks>
+            Actualizar el libro
+            </remarks>
+            <summary>
+            Realizar la actualizacion del libro
+            </summary>
+            <param name="id">Libro a actualizar.</param>
+            <response code="200">Retorna la información correctamente.</response>
+            <response code="400">Responde si la consulta no se encuentra.</response>
+        </member>
+    </members>
+</doc>
